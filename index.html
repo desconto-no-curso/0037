@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PQ83X2XB');</script>
+  <!-- End Google Tag Manager -->
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+	  
+	  
+	.product-info {
+  background-color: #ffffff; 
+  padding: 20px; 
+  border-radius: 8px; 
+  margin: 20px 50px; 
+}
+	  
+	    @media (max-width: 768px) {
+    .product-info {
+      margin-left: 20px; 
+    }
+  }
+
+.product-info h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  color: #1a5276; 
+  margin-bottom: 10px; 
+}
+
+.product-info h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  color: #1a5276; 
+  margin-top: 15px; 
+}
+
+.product-info p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #333; 
+  line-height: 1.5; 
+}
+
+.product-info ul {
+  list-style-type: disc; 
+  margin-left: 20px; 
+}
+
+.product-info li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #333; 
+  margin-bottom: 5px; 
+}
+
+
+
+    @keyframes pageFadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    body {
+      opacity: 0;
+      animation: pageFadeIn ease-in 1;
+      animation-fill-mode: forwards;
+      animation-duration: 0.3s;
+      animation-delay: .1s
+    }
+
+    header {
+      background-color: #1a5276;
+      width: 100%;
+      padding-bottom: 15px;
+    }
+
+	  
+	  @media (max-width: 768px) { 
+  h2 {
+    text-align: center; 
+  }
+}
+
+	  
+	    @media (max-width: 768px) {
+    h2 {
+      text-align: center; 
+    }
+  
+  }
+	  
+
+    .containerzao {
+      width: 100%;
+      display: flex;
+      box-sizing: border-box;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+
+    h1 {
+      font-family: 'Montserrat';
+      font-size: 48px;
+      color: #F8F9F9;
+      text-align: center;
+      padding: 20px 0 0 0;
+    }
+
+
+    .destaque {
+      font-family: 'Montserrat';
+      color: #DFFF00;
+    }
+
+    .titulo {
+      position: relative;
+
+    }
+
+
+    .testado {
+      font-family: 'special_eliteregular';
+      font-size: 22px;
+      color: #F8F9F9;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+
+    }
+
+
+    .imagem {
+      display: flex;
+      flex: 25%;
+      justify-content: center;
+      margin: 3px;
+      padding: 30px;
+    }
+
+
+    .imagem:hover {
+      transform: scale(1.03);
+      transition: all .2s ease-in-out;
+    }
+
+
+    .descricao {
+      flex: 50%;
+      padding: 5px;
+      font-size: 18px;
+      margin: 20px 0px;
+      text-align: justify;
+      color: #fff;
+      padding-right: 40px;
+      max-width: 600px;
+      font-family: 'Poppins';
+    }
+
+    p {
+      font-family: 'Poppins';
+    }
+
+
+    .cta {
+      flex: 25%;
+      padding: 30px 50px 30px 30px;
+    }
+
+
+    .a-btn {
+      text-decoration: none;
+      color: #FF5733;
+      line-height: 1;
+      text-align: center;
+      display: inline-block !important;
+      width: 100%;
+      padding: 20px 20px;
+      border-radius: 11px;
+      background: linear-gradient(to bottom, #FF5F15 0%, #FF5F15 100%);
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .5);
+      animation: pulse 1s infinite;
+    }
+
+
+
+      100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+      }
+    }
+
+    .a-btn:hover {
+      text-decoration: none;
+      color: #FF5733;
+      line-height: 1;
+      text-align: center;
+      display: inline-block !important;
+      width: 100%;
+      padding: 20px 20px;
+      border-radius: 11px;
+      background: linear-gradient(to bottom, #c64104 0%, #c64104 100%);
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .5);
+      animation: pulse 1s infinite;
+      transform: scale(1.03);
+      transition: all .2s ease-in-out;
+    }
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 95, 21, 1);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(255, 95, 21, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
+
+
+
+    .span-btn {
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased;
+      text-align: center;
+      display: block;
+      position: relative;
+      z-index: 1;
+      white-space: normal;
+      font-size: 33px;
+      font-weight: 600;
+      color: #fff;
+      font-family: 'fjalla_oneregular';
+      text-shadow: #000 0 1px 0;
+    }
+
+    .span-btn:hover {
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased;
+      text-align: center;
+      display: block;
+      position: relative;
+      z-index: 1;
+      white-space: normal;
+      font-size: 33px;
+      font-weight: 600;
+      color: #fff;
+      font-family: 'fjalla_oneregular';
+      text-shadow: #000 0 1px 0;
+    }
+
+
+    .text-cta {
+      text-align: center;
+      font-size: 14px;
+      color: #DFFF00;
+      font-family: 'Montserrat';
+      font-weight: 500;
+      padding: 15px 0px 0px 0px;
+    }
+
+
+    .pessoas {
+      display: block;
+      padding: 0px 0px 20px;
+      text-align: right;
+    }
+
+
+    .container-fb {
+      max-width: 720px;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+
+
+
+    @media screen and (max-width: 820px) {
+      .containerzao {
+        flex-direction: column;
+        margin-top: 0;
+      }
+
+      .imagem {
+        display: flex;
+        width: 100%;
+        padding-bottom: 5px;
+      }
+
+      .pessoas {
+        text-align: center;
+      }
+
+      .descricao {
+        text-align: center;
+        padding: 0 30px 0;
+        line-height: 130%;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      .testado {
+        font-size: 20px;
+      }
+
+      .cta {
+        margin-right: 0px;
+        padding: 10px 30px 15px;
+      }
+    }
+	
+	
+       .coupon-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            gap: 0px;
+        }
+        .coupon {
+            border: 5px dotted #bbb;
+            width: calc(25% - 30px); 
+            max-width: 320px;
+            border-radius: 15px;
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            padding: 15px;
+        }
+        .container {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+        .coupon img {
+            width: 80px;
+            height: auto;
+            border-radius: 50%;
+            margin: 10px 0;
+        }
+        .promo {
+            background: #ffcc00;
+            padding: 5px 10px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .expire {
+            color: red;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            .coupon {
+                width: 100%;
+            }
+        }
+
+.coupon .a-btn {
+    width: 90%;
+    margin: 15px auto;
+    padding: 15px 20px;
+    background: linear-gradient(to bottom, #5a9200 0%, #5a9200 100%);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .5);
+    animation: pulse-green 1s infinite;
+}
+
+
+@keyframes pulse-green {
+  0% {
+    box-shadow: 0 0 0 0 rgba(131, 193, 31, 1);
+  }
+  50% {
+    box-shadow: 0 0 0 5px rgba(131, 193, 31, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 13px rgba(0, 0, 0, 0);
+  }
+}
+
+
+.coupon .span-btn {
+    font-size: 24px; /* Reduz o tamanho da fonte */
+}
+
+@media (max-width: 768px) {
+    .coupon .a-btn {
+        width: 100%; /* Botão ocupa toda a largura em mobile */
+    }
+}
+
+
+.title-faq {
+  padding: 20px; 
+  text-align: center; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: 10vh; /* Ajusta o alvo pra ficar no meio da tela */
+}
+
+
+  </style>
+
+  <title>Cupom de Desconto Viva Sempre com Dinheiro 50% OFF </title>
+	<meta name="description" content="Ative Agora o Cupom de Desconto e pague 50% mais barato no curso Viva Sempre com Dinheiro da Nádia Pace. ">
+
+	<meta name="keywords" content="viva sempre com dinheiro, cupom viva sempre com dinheiro, cupom de desconto viva sempre com dinheiro">
+
+
+  <link rel="alternate" href="https://viva-sempre-com-dinheiro.desconto-no-curso.com.br" hreflang="pt-BR" />
+  <link rel="canonical" href="https://viva-sempre-com-dinheiro.desconto-no-curso.com.br" />
+
+
+  <!-- // START PRODUCT SNIPPET // -->
+  <!-- // START PRODUCT SNIPPET // -->
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Cupom de Desconto Viva Sempre com Dinheiro",
+  "image": "https://viva-sempre-com-dinheiro.desconto-no-curso.com.br/assets/images/logo.jpg",
+  "description": "Desconto de 50% nas compras usando o código DINHEIRO50.",
+  "sku": "DINHEIRO50",
+  "brand": {
+    "@type": "Brand",
+    "name": "Viva Sempre com Dinheiro"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "BRL",
+    "price": "589.00",
+    "priceValidUntil": "2027-12-31",
+    "availability": "https://schema.org/InStock",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "BRL"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "BR"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 2,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 3,
+          "maxValue": 7,
+          "unitCode": "DAY"
+        }
+      }
+    },
+    "eligibleTransactionVolume": {
+      "@type": "PriceSpecification",
+      "priceCurrency": "BRL",
+      "price": "589.00"
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "BR",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 30,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn"
+    }
+  },
+  "url": "https://viva-sempre-com-dinheiro.desconto-no-curso.com.br",
+  "validFrom": "2024-10-26",
+  "validThrough": "2027-12-31",
+  "seller": {
+    "@type": "Organization",
+    "name": "Viva Sempre com Dinheiro"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "15"
+  },
+  "review": {
+    "@type": "Review",
+    "author": {
+      "@type": "Person",
+      "name": "Marina Oliveira"
+    },
+    "datePublished": "2024-10-01",
+    "reviewBody": "Ótimo desconto! Funciona perfeitamente. Adorei o curso!",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    }
+  }
+}
+</script>
+
+	
+
+
+  <!-- // SNIPPET FAQ // -->
+  <!-- // SNIPPET FAQ // -->
+	
+
+
+<script type="application/ld+json">
+  {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+          {
+              "@type": "Question",
+              "name": "Como Usar o Cupom Viva Sempre com Dinheiro?",
+              "acceptedAnswer": { 
+                  "@type": "Answer", 
+                  "text": "Basta clicar no botão 'VER O DESCONTO'. Nós redirecionaremos você para o site oficial do curso com o desconto já aplicado automaticamente."
+              }
+          },
+          { 
+              "@type": "Question", 
+              "name": "Posso pagar parcelado ou somente à vista?", 
+              "acceptedAnswer": { 
+                  "@type": "Answer", 
+                  "text": "O benefício do desconto pode ser obtido no pagamento à vista ou parcelado."
+              }
+          },
+          { 
+              "@type": "Question", 
+              "name": "Quais são as formas de pagamento?", 
+              "acceptedAnswer": { 
+                  "@type": "Answer", 
+                  "text": "À vista: Boleto ou Pix // Parcelado: Cartões de Crédito."
+              } 
+          }
+      ]
+  }
+</script>
+
+
+  <!-- // END SNIPPET FAQ // -->
+  <!-- // END SNIPPET FAQ // -->
+	
+
+</head>
+
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQ83X2XB" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header>
+    <div class="titulo">
+		<h1>CUPOM VIVA SEMPRE COM DINHEIRO
+		<br>
+		<span class="destaque"> 50% DE DESCONTO </span></h1>
+    </div><br>
+
+<div class="testado"> VERIFICADO em
+   <script>
+     date = new Date().toLocaleDateString();
+     document.write(date);
+   </script>
+</div>
+
+    <div class="containerzao">
+      <div class="imagem"> <a href="#cupons" alt="OFERTA ESPECIAL" title="USAR O CUPOM"><img src="./assets/images/viva-sempre-com-dinheiro.webp" alt="Viva Sempre com Dinheiro: aulas gravadas, que qualquer pessoa consegue realizar, sair das dívidas, limpar o nome, realizar os seus sonhos!" width="250" height="250">
+</a></div>
+
+      <div class="descricao">
+		  <div id="get-deal">
+        <p><strong>Nádia Pace apresenta "Viva Sempre com Dinheiro"</strong>, uma mentoria individual, com aulas gravadas, que qualquer pessoa consegue realizar, sair das dívidas, limpar o nome, realizar os seus sonhos e viver sempre com dinheiro.
+
+</p> <br> 
+		
+		<p>Aproveite as ofertas imperdíveis logo abaixo! E Saia do caos financeiro e viva sempre com dinheiro! Selecionamos os <strong>melhores cupons de desconto</strong> para vc economizar nas suas compras. Basta vc escolher a promoção que mais te interessa e <strong>ativar o desconto com um clique.</strong> </p>
+
+		  </div></div>
+
+      <div class="cta">
+        <a href="#cupons" class="a-btn" style="text-decoration: none;" title="PEGAR O DESCONTO" aria-label="Ativar o Desconto VIVA SEMPRE COM DINHEIRO">
+  <span class="span-btn">VER CUPONS</span>
+</a>
+
+
+        <div class="text-cta">
+          Rápido, Últimas Vagas!
+        </div>
+
+      </div>
+    </div>
+    <div>
+
+    </div>
+  </header>
+	
+
+
+	
+
+<div id="cupons" class="coupon-container">
+
+    <!-- Cupom 1 -->
+    <div class="coupon">
+        <div class="container">
+            <h3><span class="promo">CUPOM 30% OFF</span></h3>
+        </div>
+        <img src="./assets/images/viva-sempre-com-dinheiro.webp" alt="Cupom VIVA SEMPRE COM DINHEIRO - 30% OFF">
+        <div class="container" style="background-color:white">
+            <h2><b>CUPOM VIVA SEMPRE COM DINHEIRO 30% OFF</b></h2>
+            <p>Ganhe 30% de desconto</p>
+        </div>
+        <div class="container">
+            <p>Clique no botão abaixo</p>
+            <p class="expire">Expira em    <script>
+     date = new Date().toLocaleDateString();
+     document.write(date);
+   </script></p>
+            <a href="/" class="a-btn" style="text-decoration: none;" title="PEGAR O DESCONTO" aria-label="Ativar o Desconto VIVA SEMPRE COM DINHEIRO">
+                <span class="span-btn">VER O DESCONTO</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Cupom 2 -->
+    <div class="coupon">
+        <div class="container">
+            <h3><span class="promo">CUPOM 40% OFF</span></h3>
+        </div>
+        <img src="./assets/images/viva-sempre-com-dinheiro.webp" alt="Cupom VIVA SEMPRE COM DINHEIRO - 40% OFF">
+        <div class="container" style="background-color:white">
+            <h2><b>CUPOM VIVA SEMPRE COM DINHEIRO 40% OFF</b></h2>
+            <p>Ganhe 40% de desconto</p>
+        </div>
+        <div class="container">
+            <p>Clique no botão abaixo</p>
+            <p class="expire">Expira em    <script>
+     date = new Date().toLocaleDateString();
+     document.write(date);
+   </script></p>
+            <a href="/" class="a-btn" style="text-decoration: none;" title="PEGAR O DESCONTO" aria-label="Ativar o Desconto VIVA SEMPRE COM DINHEIRO">
+                <span class="span-btn">VER O DESCONTO</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Cupom 3 -->
+    <div class="coupon">
+        <div class="container">
+            <h3><span class="promo">CUPOM 45% OFF</span></h3>
+        </div>
+        <img src="./assets/images/viva-sempre-com-dinheiro.webp" alt="Cupom VIVA SEMPRE COM DINHEIRO - 45% OFF">
+        <div class="container" style="background-color:white">
+            <h2><b>CUPOM VIVA SEMPRE COM DINHEIRO 45% OFF</b></h2>
+            <p>Ganhe 45% de desconto</p>
+			</div>
+        <div class="container">
+            <p>Clique no botão abaixo</p>
+            <p class="expire">Expira em    <script>
+     date = new Date().toLocaleDateString();
+     document.write(date);
+   </script></p>
+            <a href="/" class="a-btn" style="text-decoration: none;" title="PEGAR O DESCONTO" aria-label="Ativar o Desconto VIVA SEMPRE COM DINHEIRO">
+                <span class="span-btn">VER O DESCONTO</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Cupom 4 -->
+    <div class="coupon">
+        <div class="container">
+            <h3><span class="promo">CUPOM 50% OFF</span></h3>
+        </div>
+        <img src="./assets/images/viva-sempre-com-dinheiro.webp" alt="Cupom VIVA SEMPRE COM DINHEIRO - 50% OFF">
+        <div class="container" style="background-color:white">
+            <h2><b>CUPOM VIVA SEMPRE COM DINHEIRO 50% OFF</b></h2>
+            <p>Ganhe 50% de desconto</p>
+        </div>
+        <div class="container">
+            <p>Clique no botão abaixo</p>
+            <p class="expire">Expira em    <script>
+     date = new Date().toLocaleDateString();
+     document.write(date);
+   </script></p>
+            <a href="/" class="a-btn" style="text-decoration: none;" title="PEGAR O DESCONTO" aria-label="Ativar o Desconto VIVA SEMPRE COM DINHEIRO">
+                <span class="span-btn">VER O DESCONTO</span>
+            </a>
+        </div>
+    </div>
+</div>
+	
+	
+<div class="coupon-info" style="text-align: center; margin: 20px auto 60px auto; max-width: 900px;">
+    <p><strong>Não perca essa chance de economizar!</strong> Os cupons acima garantem descontos exclusivos no curso <strong>Viva Sempre com Dinheiro</strong>, ajudando você a investir no seu autoconhecimento com um valor especial.</p>
+</div>
+
+
+
+	
+	
+	
+  
+
+	  
+  <div class="title-faq">
+    <h2>Perguntas Frequentes Sobre Esse Cupom</h2>
+</div>
+	  
+	  
+  <div class="faq">
+    <div class="faq-div">
+      <input type="checkbox" id="title1" />
+      <label for="title1">Como Usar o Cupom Viva Sempre com Dinheiro?</label>
+
+      <div class="content">
+        <p>Basta clicar no botão 'VER O DESCONTO'. Nós redirecionaremos você para o site oficial do curso com o desconto já aplicado automaticamente.</p>
+      </div>
+
+      <input type="checkbox" id="title2" />
+      <label for="title2">Posso pagar parcelado ou somente à vista?</label>
+
+      <div class="content">
+        <p>O benefício do desconto pode ser obtido no pagamento à vista ou parcelado.</p>
+      </div>
+
+      <input type="checkbox" id="title3" />
+      <label for="title3">Quais são as formas de pagamento?</label>
+
+      <div class="content">
+        <p>À vista: Boleto ou Pix // Parcelado: Cartões de Crédito.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="container-footer">
+    <div class="text-rodape">
+      <div class="a"><a href="https://desconto-no-curso.com.br/termos-de-uso.html" class="text-rodape">Termos de Uso</a> | <a
+          href="https://desconto-no-curso.com.br/politica-de-privacidade.html" class="text-rodape">Política de Privacidade</a> | <a
+          href="https://desconto-no-curso.com.br/" class="text-rodape">Mais Cupons</a>
+        </div>
+    </div>
+    <div class="container-footer">
+      <div class="text-rodape">
+        <h4> Desconto no Curso © Todos os direitos reservados.</h4>
+      </div>
+    </div>
+  </footer>
+	  
+
+	  
+</body>
+
+
+</html>
