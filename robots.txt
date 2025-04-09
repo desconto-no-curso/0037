@@ -6,3 +6,10 @@ Disallow:
 
 User-agent: Googlebot-Image
 Disallow:
+
+
+
+Sitemap: https://viva-sempre-com-dinheiro.desconto-no-curso.com.br/sitemap.xml
+
+
+
